@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple UI</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border: none;
+            width: 200px;
+            height: 41px;
+            font-size: 26px;
+            border-radius: 50px;
+            transition: 1s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .btn:active {
+            scale: 0.8;
+        }
+    </style>
+</head>
+
+<body class="main">
+    <button onclick="btn();" id="btn2024" class="btn">Follow</button>
+
+    <script>
+        function btn() {
+            const a = document.getElementById("btn2024");
+            if (a.innerText == "Follow") {
+                a.innerText = "Following";
+            } else {
+                a.innerText = "Follow";
+            }
+        }
+    </script>
+</body>
+
+</html>
